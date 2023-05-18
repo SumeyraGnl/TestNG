@@ -13,6 +13,12 @@ public class C04_DriverIlkTest {
     /*
 
         POM' de driver olusturmak icin
+        inheritance ile kullandigimiz TestBase class'i yerine
+        static yollarla ulasabilecegimiz bir method kullanilmasi tercih edilmistir
+
+        Driver bizim icin cok onemli oldugundan
+        Driver icin bagimsiz bir class olusturacagiz
+
      */
 
     @Test

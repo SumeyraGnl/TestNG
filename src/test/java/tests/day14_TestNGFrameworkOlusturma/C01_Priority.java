@@ -19,7 +19,7 @@ public class C01_Priority {
 
      */
 
-    @Test(priority = 57)
+    @Test(groups = "minireg1")
     public void youtubeTesti(){
 
         System.out.println("Youtube");
@@ -32,7 +32,7 @@ public class C01_Priority {
         System.out.println("Wise Quarter");
     }
 
-    @Test
+    @Test(groups = {"smoke","minireg1"})
     public void amazonTesti(){  // priority yazilmazsa 0 degeri alir
 
         System.out.println("Amazon");

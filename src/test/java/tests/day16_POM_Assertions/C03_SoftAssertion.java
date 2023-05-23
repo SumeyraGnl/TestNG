@@ -7,7 +7,7 @@ import org.testng.asserts.SoftAssert;
 public class C03_SoftAssertion {
 
     @Test
-    public void cokluAssertion(){
+    public void hardAssertion(){
 
          /*
             Assert islemi ilk failed oldugunda
@@ -63,11 +63,19 @@ public class C03_SoftAssertion {
 
         softAssert.assertTrue(sayi>100,"sayi 100'den buyuk olmali"); // sayi 100'den buyuk mu ?
 
-        softAssert.assertTrue(sayi < 1000,"sayi 1000'den kucuk olmalio"); // sayi 1000'den kucuk mu ?
+        softAssert.assertTrue(sayi < 1000,"sayi 1000'den kucuk olmali"); // sayi 1000'den kucuk mu ?
 
         softAssert.assertFalse(sayi % 3 == 0,"Sayi 3'e bolunememeli"); // sayinin 3 ile bolunemedigini test edin
 
         softAssert.assertAll();
+
+
+
+
+
+        // softAssert objesi ile assertion'lari yaptiktan sonra
+        // assertAll() kullanmazsaniz, test direk PASSED olur,
+        // failed olan assertion'lar raporlanmaz.
 
     }
 }
